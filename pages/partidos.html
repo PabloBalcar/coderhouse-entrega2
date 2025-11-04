@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    
+<body class="partidosfondo">
+    <header>
+        <div class="logo">
+            <h1 class="general">Club Atlético Boca Juniors</h1>
+            <a href="../index.html" id="escudo-boca">
+                <img src="../assets/escudodeboca.png" alt="Escudo Boca Juniors" id="imagen-escudo-boca">
+            </a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/partidos.html">Partidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/plantel.html">Plantel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
     <section id="partidos">
         <h2>Próximos Partidos</h2>
         <div class="partidos-container">
@@ -18,23 +57,32 @@
             </div>
 
             <div class="partido">
-                <span>2/11/2025</span>
+                <span>9/11/2025</span>
                 <span>River Plate</span>
                 <span>La Bombonera</span>
             </div>
 
             <div class="partido">
-                <span>10/11/2025</span>
-                <span>Racing Club</span>
-                <span>El Cilindro</span>
-            </div>
-
-            <div class="partido">
-                <span>18/11/2025</span>
-                <span>Independiente</span>
+                <span>16/11/2025</span>
+                <span>Tigre</span>
                 <span>La Bombonera</span>
             </div>
-        </div>
+
+
     </section>
+
+                <footer>
+        <p>© 2025 Club Atlético Boca Juniors</p>
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
 </body>
 </html>
