@@ -1,0 +1,53 @@
+@use "variables"as v;
+
+.fondocontacto {
+    background-image: url('../assets/fondocontacto.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    gap: 10px;
+
+    input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: v.$color-secundario;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+            color: #00246B;
+            transition: 0.3s;
+        }
+    }
+}

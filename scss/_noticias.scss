@@ -1,0 +1,64 @@
+@use "variables"as v;
+
+#noticias {
+    position: relative;
+    background-image: url('../assets/fondonoticias.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+#noticias h2 {
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: v.$color-secundario;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noticias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.noticiafondo {
+    width: 100%;
+    max-width: 500px;
+    background-color: #004b87;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-bottom: 5px solid #ffcc00;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin: 15px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 15px;
+        line-height: 1.6;
+    }
+}

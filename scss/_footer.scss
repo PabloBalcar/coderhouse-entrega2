@@ -1,0 +1,10 @@
+@use "variables" as v;
+
+footer{
+    background-color:#00153B; ;
+    text-align: center;
+    padding: 20px;
+    a{
+        color: v.$color-secundario; 
+    }
+}

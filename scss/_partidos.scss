@@ -1,0 +1,55 @@
+@use "variables"as v;
+
+.partidosfondo {
+    background-image: url('../assets/fondopartidos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        /* capa oscura */
+        z-index: -1;
+    }
+}
+
+#partidos {
+    padding: 40px 20px;
+    text-align: center;
+
+    .partidos-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .partido.header {
+        background-color: #FFD700;
+        color: #00246B;
+        font-weight: 900;
+    }
+
+    .partido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #00246B;
+        border: 1px solid #FFD700;
+        border-radius: 8px;
+        padding: 10px 0;
+        font-weight: bold;
+        color: white;
+
+        &:hover {
+            background-color: #0033A0;
+            transition: 0.3s;
+        }
+    }
+
+}

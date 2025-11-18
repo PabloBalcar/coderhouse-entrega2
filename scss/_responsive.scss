@@ -1,0 +1,115 @@
+@use "variables"as v;
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+
+        .logo img {
+            width: 45px;
+        }
+
+        .navbar {
+            .navbar-nav {
+                gap: 10px;
+
+                .nav-link {
+                    padding: 8px 10px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    #inicio {
+        .texto-inicio {
+            padding: 20px;
+            max-width: 90%;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .jugadores {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    .partidos-container {
+        width: 95% !important;
+
+        .partido {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+
+            div {
+                padding: 5px 0;
+            }
+        }
+    }
+
+    .noticias-container {
+        flex-direction: column;
+        align-items: center;
+
+        .noticiafondo {
+            max-width: 90%;
+        }
+    }
+
+    form {
+        width: 90% !important;
+    }
+
+    .fondoplantel,
+    .partidosfondo,
+    .fondocontacto,
+    #noticias {
+        background-attachment: scroll !important;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+
+        .navbar .navbar-nav .nav-link {
+            font-size: 0.9rem;
+        }
+    }
+
+    #inicio {
+        .texto-inicio {
+            padding: 30px;
+            max-width: 80%;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .jugadores {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .partidos-container {
+        width: 90%;
+    }
+
+    .noticiafondo {
+        max-width: 400px;
+    }
+
+    form {
+        width: 75%;
+    }
+}

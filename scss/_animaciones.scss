@@ -1,0 +1,17 @@
+// ANIMACIONES
+@keyframes pulseSoft {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0px #ffd700);
+    }
+
+    50% {
+        transform: scale(1.06);
+        filter: drop-shadow(0 0 8px #ffd700);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0px #ffd700);
+    }
+}

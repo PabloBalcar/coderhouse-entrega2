@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    text-align: center;
+    color: v.$color-primario; 
+    position: relative;
+
+    .texto-inicio {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 40px 60px;
+        border-radius: 12px;
+        max-width: 900px;
+        
+        h2 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            line-height: 1.6;
+            font-style: italic;
+            margin: 0;
+        }
+    }
+}
+
+.backgroundimagen {
+    text-align: center;
+    background-image: url('../assets/estadio.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    padding: 0;
+}
