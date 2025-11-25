@@ -79,7 +79,7 @@ footer a {
 }
 
 .fondoplantel {
-  background-image: url("../assets/fondoplantel.jpg");
+  background-image: url("../assets/fondoplantel_1.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -118,7 +118,7 @@ footer a {
 }
 
 .partidosfondo {
-  background-image: url("../assets/fondopartidos.jpg");
+  background-image: url("../assets/fondopartidos_1.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -303,7 +303,7 @@ form button:hover {
 
 .backgroundimagen {
   text-align: center;
-  background-image: url("../assets/estadio.jpg");
+  background-image: url("../assets/fondoindexjpg.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
