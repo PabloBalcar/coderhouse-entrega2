@@ -1,44 +1,24 @@
-@use "variables"as v;
+@use "variables" as v;
 
-.fondoplantel {
-    background-image: url('../assets/fondoplantel.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-
-    &::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: -1;
-    }
-}
-#arqueros,
-#defensores,
-#mediocampistas,
-#delanteros, 
-#dt{
+// Mixin para estilos flexbox comunes
+@mixin flex-center($gap: 20px, $justify: space-around) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    margin-bottom: 30px;
+    justify-content: $justify;
+    gap: $gap;
 }
-#arqueros h2,
-#defensores h2,
-#mediocampistas h2,
-#delanteros h2,
-#dt h2 {
+
+// Mixin para los estilos comunes de los h2
+@mixin h2-style($color: v.$color-secundario, $font-size: 30px) {
     text-align: center;
-    font-size: 30px;
-    color: v.$color-secundario;
+    font-size: $font-size;
+    color: $color;
     margin-bottom: 20px;
     width: 100%;
 }
 
-.jugador {
+// Mixin para los estilos de los jugadores
+@mixin jugador-style {
     width: 240px;
     border-radius: 10px;
     padding: 10px;
@@ -52,12 +32,10 @@
     justify-content: space-between;
 
     h3 {
-
         color: #fff;
         font-size: 20px;
         margin-top: 10px;
         font-family: 'Arial', sans-serif;
-
     }
 
     img {
@@ -89,9 +67,52 @@
     }
 }
 
-section {
-    margin-bottom: 40px;
+// Mixin para los estilos de la sección
+@mixin section-style($margin-bottom: 40px) {
+    margin-bottom: $margin-bottom;
 }
+
+.fondoplantel {
+    background-image: url('../assets/fondoplantel.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+    }
+}
+
+#arqueros,
+#defensores,
+#mediocampistas,
+#delanteros,
+#dt {
+    @include flex-center(20px, space-around);
+    margin-bottom: 30px;
+}
+
+#arqueros h2,
+#defensores h2,
+#mediocampistas h2,
+#delanteros h2,
+#dt h2 {
+    @include h2-style(v.$color-secundario, 30px);
+}
+
+.jugador {
+    @include jugador-style;
+}
+
+section {
+    @include section-style;
+}
+
 #arqueros,
 #defensores,
 #mediocampistas,
@@ -100,7 +121,8 @@ section {
     border-bottom: 4px solid #101cca;
     padding-bottom: 20px;
 }
-#arqueros h2
+
+#arqueros h2,
 #defensores h2,
 #mediocampistas h2,
 #delanteros h2 {
@@ -138,9 +160,6 @@ h2 {
 }
 
 .jugadores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    @include flex-center(20px, center);
     width: 100%;
 }

@@ -1,4 +1,18 @@
-@use "variables"as v;
+%fila-comun {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 15px;
+    border-radius: 8px;
+    background: #013E9A;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform .2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
 
 .partidos-seccion {
     background-image: url('../assets/fondoplantel.webp');
@@ -26,22 +40,11 @@
 }
 
 .fila {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    padding: 15px;
-    border-radius: 8px;
-    background: #013E9A;
-    color: white;
-    font-size: 1.1rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    transition: transform .2s ease;
-
-    &:hover {
-        transform: translateY(-3px);
-    }
+    @extend %fila-comun;
 }
 
 .fila.header {
+    @extend %fila-comun;
     background: #FFD200;
     color: #00297A;
     font-weight: bold;
