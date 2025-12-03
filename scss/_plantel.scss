@@ -1,7 +1,5 @@
-@use "variables"as v;
-
 .fondoplantel {
-    background-image: url('../assets/fondoplantel_1.webp');
+    background-image: url('../assets/fondoplantel.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,31 +13,133 @@
         z-index: -1;
     }
 }
+#arqueros,
+#defensores,
+#mediocampistas,
+#delanteros, 
+#dt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+#arqueros h2,
+#defensores h2,
+#mediocampistas h2,
+#delanteros h2,
+#dt h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.jugador {
+    width: 240px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(27, 10, 75, 0.849);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+
+        color: #fff;
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: 'Arial', sans-serif;
+
+    }
+
+    img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .info-jugador {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 10px;
+        border-radius: 8px;
+        padding: 0 8px;
+        white-space: pre-line;
+    }
+
+    &:hover .info-jugador {
+        max-height: 200px;
+        padding: 8px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+}
+
+section {
+    margin-bottom: 40px;
+}
+#arqueros,
+#defensores,
+#mediocampistas,
+#delanteros {
+    margin-bottom: 40px;
+    border-bottom: 4px solid #101cca;
+    padding-bottom: 20px;
+}
+#arqueros h2
+#defensores h2,
+#mediocampistas h2,
+#delanteros h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#dt {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+}
+
+#dt h2 {
+    font-size: 30px;
+    color: #ffcc00;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #ffcc00;
+    /* Color destacado para los títulos */
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
 
 .jugadores {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    justify-items: center;
-
-
-    .jugador {
-        background-color: rgba(29, 0, 107, 0.822);
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-
-        &:hover {
-            transform: scale(1.05);
-            background-color: #05276b;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            transition: all 0.3s ease;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
