@@ -1,55 +1,49 @@
 @use "variables"as v;
 
-.partidosfondo {
-    background-image: url('../assets/fondopartidos_1.webp');
+.partidos-seccion {
+    background-image: url('../assets/fondoplantel.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
 
-    &::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        /* capa oscura */
-        z-index: -1;
+    h2 {
+        color: #ffffff;
+        font-size: 2.2rem;
+        margin-bottom: 25px;
     }
 }
 
-#partidos {
-    padding: 40px 20px;
-    text-align: center;
+.tabla-partidos {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-    .partidos-container {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 15px;
+    border-radius: 8px;
+    background: #013E9A;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform .2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
     }
+}
 
-    .partido.header {
-        background-color: #FFD700;
-        color: #00246B;
-        font-weight: 900;
-    }
-
-    .partido {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        background-color: #00246B;
-        border: 1px solid #FFD700;
-        border-radius: 8px;
-        padding: 10px 0;
-        font-weight: bold;
-        color: white;
-
-        &:hover {
-            background-color: #0033A0;
-            transition: 0.3s;
-        }
-    }
-
+.fila.header {
+    background: #FFD200;
+    color: #00297A;
+    font-weight: bold;
+    font-size: 1.15rem;
 }

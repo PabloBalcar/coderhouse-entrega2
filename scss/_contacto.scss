@@ -1,53 +1,74 @@
 @use "variables"as v;
 
-.fondocontacto {
-    background-image: url('../assets/fondocontacto.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100vh;
 
-    &::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: -1;
-    }
-}
+#contacto {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #003087, #0a0a0a);
+    color: #fff;
 
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
-    gap: 10px;
-
-    input {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+        color: v.$color-secundario;
     }
 
-    textarea {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
+    p {
+        margin-bottom: 40px;
+        color: v.$color-primario;
     }
 
-    button {
-        background-color: v.$color-secundario;
-        border: none;
-        padding: 10px;
-        font-weight: bold;
-        cursor: pointer;
+    .contacto-form {
+        max-width: 500px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 25px;
+        border-radius: 12px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
 
-        &:hover {
-            background-color: white;
-            color: #00246B;
-            transition: 0.3s;
+        .input-group {
+            text-align: left;
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 7px;
+                color: v.$color-secundario;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                font-size: 1rem;
+                outline: none;
+                background: rgba(255, 255, 255, 0.8);
+
+                &:focus {
+                    box-shadow: 0 0 8px rgba(255, 222, 0, 0.8);
+                }
+            }
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background: #ffdf00;
+            color: #0a0a0a;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                background: lighten(#ffdf00, 12%);
+            }
         }
     }
 }

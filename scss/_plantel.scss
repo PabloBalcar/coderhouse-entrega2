@@ -1,5 +1,7 @@
+@use "variables"as v;
+
 .fondoplantel {
-    background-image: url('../assets/fondoplantel.png');
+    background-image: url('../assets/fondoplantel.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,7 +33,7 @@
 #dt h2 {
     text-align: center;
     font-size: 30px;
-    color: #ffcc00;
+    color: v.$color-secundario;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -128,7 +130,6 @@ section {
 h2 {
     font-size: 36px;
     color: #ffcc00;
-    /* Color destacado para los títulos */
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;

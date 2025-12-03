@@ -9,74 +9,93 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
-        <!-- SEO -->
-    <meta name="description" content="Contactate con el Club Atlético Boca Juniors. Envía consultas, mensajes o sugerencias y conectate con el mundo azul y oro.">
-    <meta name="keywords" content="contacto Boca Juniors, formulario de contacto CABJ, consultas azul y oro, Boca fans, La Bombonera contacto">
+    <!-- SEO -->
+    <meta name="description"
+        content="Contactate con el Club Atlético Boca Juniors. Envía consultas, mensajes o sugerencias y conectate con el mundo azul y oro.">
+    <meta name="keywords"
+        content="contacto Boca Juniors, formulario de contacto CABJ, consultas azul y oro, Boca fans, La Bombonera contacto">
     <meta name="author" content="Balcar Pablo">
     <meta property="og:title" content="Boca Juniors - Contacto">
-    <meta property="og:image" content="https://raw.githubusercontent.com/PabloBalcar/coderhouse-entrega2/refs/heads/main/assets/escudodeboca.png">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/PabloBalcar/coderhouse-entrega2/refs/heads/main/assets/escudodeboca.webp">
     <meta property="og:url" content="https://pablobalcar.github.io/coderhouse-entrega2/">
 
 </head>
 
 <body class="fondocontacto">
-    
+
     <header>
         <div class="logo">
             <h1 class="general">Club Atlético Boca Juniors</h1>
             <a href="../index.html" id="escudo-boca">
-                <img src="../assets/escudodeboca.png" alt="Escudo Boca Juniors" id="imagen-escudo-boca">
+                <img src="../assets/escudodeboca.webp" alt="Escudo Boca Juniors" id="imagen-escudo-boca">
             </a>
         </div>
 
         <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/noticias.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/partidos.html">Partidos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/plantel.html">Plantel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/partidos.html">Partidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/plantel.html">Plantel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
 
-    <section >
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Querés comunicarte con nosotros? Enviá tu mensaje:</p>
+
+        <form class="contacto-form">
+            <div class="input-group">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="tucorreo@gmail.com">
+            </div>
+
+            <div class="input-group">
+                <label>Mensaje</label>
+                <textarea rows="4" placeholder="Escribí tu consulta..."></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
         </form>
     </section>
 
     <footer>
         <p>© 2025 Club Atlético Boca Juniors</p>
-    <div class="redes">
-        <a href="https://www.instagram.com/bocajrs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-        <a href="https://x.com/BocaJrsOficial" target="_blank">Twitter</a>
-        <a href="https://www.bocajuniors.com.ar" target="_blank">Sitio Oficial de Boca Juniors</a>
-    </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/bocajrs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank">Instagram</a>
+            <a href="https://x.com/BocaJrsOficial" target="_blank">Twitter</a>
+            <a href="https://www.bocajuniors.com.ar" target="_blank">Sitio Oficial de Boca Juniors</a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">

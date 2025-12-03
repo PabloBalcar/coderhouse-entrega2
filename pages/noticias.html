@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boca Juniors - Noticias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- SEO -->
-    <meta name="description" content="Últimas noticias del Club Atlético Boca Juniors: resultados, goles, rendimiento del equipo, novedades del plantel y actualidad Xeneize.">
-    <meta name="keywords" content="noticias Boca Juniors, actualidad Xeneize, resultados Boca, fútbol argentino noticias, goles Boca">
+    <!-- SEO -->
+    <meta name="description"
+        content="Sitio dedicado al Club Atlético Boca Juniors, donde vivir la pasión azul y oro, noticias, plantel, partidos y todo sobre los Xeneizes.">
+    <meta name="keywords" content="Boca Juniors, Xeneizes, fútbol argentino, La Bombonera, pasión azul y oro">
     <meta name="author" content="Balcar Pablo">
-    <meta property="og:title" content="Boca Juniors - Noticias">
-    <meta property="og:image" content="https://raw.githubusercontent.com/PabloBalcar/coderhouse-entrega2/refs/heads/main/assets/escudodeboca.png">
+    <meta property="og:title" content="Boca Juniors - Inicio">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/PabloBalcar/coderhouse-entrega2/refs/heads/main/assets/escudodeboca.webp">
     <meta property="og:url" content="https://pablobalcar.github.io/coderhouse-entrega2/">
-
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <h1 class="general">Club Atlético Boca Juniors</h1>
@@ -30,48 +32,67 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/partidos.html">Partidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/plantel.html">Plantel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/partidos.html">Partidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/plantel.html">Plantel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
             </div>
         </nav>
     </header>
-    <section id="noticias">
-        <h2>Últimas Noticias</h2>
 
-        <div class="noticias-container">
-            <div class="noticiafondo">
-                <img src="../assets/bocavsestudiantes.jpg" alt="Noticia Boca">
-                <h3>Boca vence a Estudiantes</h3>
-                <p>Con goles de Exequiel Zeballos (49) y Miguel Merentiel (90+7) por parte del equipo de Ubeda.</p>
-            </div>
-            <!-- Más noticias -->
+    <section id="noticias" class="noticias-section">
+        <h2 class="seccion-titulo">📰 Últimas Noticias</h2>
+
+        <div class="noticias-grid">
+            <!-- Card 1 -->
+            <article class="noticia-card">
+                <div class="thumb">
+                    <img src="../assets/noticiasaja.webp" alt="Imagen noticia 1">
+                </div>
+                <div class="noticia-body">
+                    <h3>Saja Le Hizo Una Advertencia A Boca</h3>
+                    <p class="resumen"> Saja fue consultado sobre el duelo que se viene y advirtió al Xeneize: “A este
+                        grupo le gusta ese tipo de partidos, son partidos muy grandes y que tienen mucho atractivo“. De
+                        esta manera, dejó en claro que están “preparados” para este tipo de encuentros.</p>
+                    <time datetime="2025-11-25" class="fecha">25 Nov, 2025</time>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="noticia-card">
+                <div class="thumb">
+                    <img src="../assets/noticiamarchesin.webp" alt="Imagen noticia 2">
+                </div>
+                <div class="noticia-body">
+                    <h3>Agustín Marchesín confesó qué es lo que más le cuesta de su relación con Riquelme</h3>
+                    <p class="resumen">Román viene, se acerca, saluda… Si las cosas no me están saliendo bien, como me
+                        pasó este semestre, que por ahí tuve un momento complicado, a veces hasta me da vergüenza
+                        saludarlo. Tengo una admiración muy grande hacia él”</p>
+                    <time datetime="2025-10-02" class="fecha">03 Dic, 2025</time>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="noticia-card">
+                <div class="thumb">
+                    <img src="../assets/noticiaalarcon.webp" alt="Imagen noticia 3">
+                </div>
+                <div class="noticia-body">
+                    <h3>Williams Alarcón, el suplente de Boca que le gusta a Diego Martínez para Huracán</h3>
+                    <p class="resumen">Diego Martínez podría meterse de lleno en el mercado de pases de Boca.
+                        Recientemente, el entrenador llegó a un acuerdo para convertirse en nuevo entrenador de Huracán
+                        y será su segundo ciclo en Parque Patricios. Rápidamente, el DT con pasado en el Xeneize puso
+                        manos a la obra y estaría interesado en un futbolista que conforma el plantel de Úbeda.</p>
+
+                    <time datetime="2025-09-14" class="fecha">14 Sep, 2025</time>
+                </div>
+            </article>
         </div>
-
-
     </section>
+
     <footer>
         <p>© 2025 Club Atlético Boca Juniors</p>
         <div class="redes">
@@ -80,11 +101,6 @@
             <a href="https://www.bocajuniors.com.ar" target="_blank">Sitio Oficial de Boca Juniors</a>
         </div>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
